@@ -14,7 +14,7 @@ terraform {
   required_version = "~> 1.0"
 
   cloud {
-    organization = "techsoysauce"
+    organization = "[Terraform Org]"
 
     workspaces {
       name = "resume-cicd"
@@ -132,7 +132,7 @@ resource "aws_iam_policy" "policy" {
           "dynamodb:PutItem",
           "dynamodb:UpdateItem"
         ],
-        "Resource" : "arn:aws:dynamodb:us-east-1:482654496154:table/jp_resume_db"
+        "Resource" : "arn:aws:dynamodb:us-east-1:[AWSAccountNumber]:table/jp_resume_db"
       },
       {
         "Effect" : "Allow",
@@ -150,7 +150,7 @@ resource "aws_iam_policy" "policy" {
 # Apply policy to IAM role
 resource "aws_iam_role_policy_attachment" "lambda_policy" {
   role       = aws_iam_role.lambda_exec.name
-  policy_arn = "arn:aws:iam::482654496154:policy/jp_dynamodb_allow_lambda_policy"
+  policy_arn = "arn:aws:iam::[AWSAccountNumber]:policy/jp_dynamodb_allow_lambda_policy"
 
 }
 
