@@ -4,6 +4,7 @@ I setup a serverless website for my resume that displays the number of site visi
 **Diagram of Setup**
 ![Resume Cloud Challenge Diagram](https://github.com/techsoysauce/cloud-resume-challenge-final/blob/main/resume-cloud-diagram.png?raw=true)
 
+<br><br>
 This repo offers a sanitized version of my code.
 
 ## Architecture Overview:
