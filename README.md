@@ -36,7 +36,7 @@ I setup a serverless website for my resume that displays the number of site visi
 * GitHub
     * Used for storage of front-end, back-end repos.
     * Changes are controlled via git vcs.
-    * GitHub Actions workflow setup that automatically updates S3 front-end contents when changes are merged with *main* branch.
+    * GitHub Actions workflow setup, that automatically updates S3 front-end contents when changes are merged with *main* branch.
 
 <br><br>
 
