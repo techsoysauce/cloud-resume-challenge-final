@@ -1,18 +1,21 @@
 # Cloud Resume Challenge
 I setup a serverless website for my resume that displays the number of site visits.  This project is hosted on AWS and managed through Terraform and GitHub Actions for CI/CD.
 
-**Diagram of Setup**
+<br><br>
+
+**DIAGRAM OF SETUP**
+<br>
 ![Resume Cloud Challenge Diagram](https://github.com/techsoysauce/cloud-resume-challenge-final/blob/main/resume-cloud-diagram.png?raw=true)
 
 <br><br>
-This repo offers a sanitized version of my code.
 
 ## Architecture Overview:
+(This repo offers a sanitized version of my code.)
 ### FRONT-END
 * CloudFront with ACM
     * Loads private S3 html content to present an HTTPS resume website.
 * S3 bucket for publishing front-end website code
-    * Private bucket that is used by CloudFront that loads: html, css and javascript content.
+    * Private bucket that is used by CloudFront that loads: HTML, CSS and JavaScript content.
 
 ### BACK-END
 * API Gateway - HTTP v2
@@ -22,7 +25,7 @@ This repo offers a sanitized version of my code.
 * DynamoDB Table
     * Table to record visit count.
 * CloudWatch logs
-    * Logs automatically provisioned to monitor API Gateway and Lambda calls.  Cloudwatch alarms configured to monitor for 4XX, 5XX and latency errors.
+    * Logs automatically provisioned to monitor API Gateway and Lambda calls.  Cloudwatch alarms configured to monitor for **4XX**, **5XX** and **latency** errors.
 
 ## Automation Technologies Used:
 * Terraform
